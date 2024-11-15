@@ -42,6 +42,3 @@ vim.o.clipboard = 'unnamedplus'
 -- case insensitive search unless capitals are used
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
-
-

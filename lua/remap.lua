@@ -74,4 +74,3 @@ vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { desc = '[G]oto [D]eclaratio
 -- vim.keymap.set("n", "<leader>svwm", function()
 --     require("vim-with-me").StopVimWithMe()
 -- end)
-
