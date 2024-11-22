@@ -1,5 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+--clear search on esc
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 -- open netrw
@@ -54,7 +58,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 -- hover documentation
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Hover Documentation'})
-vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { desc = 'Signature Documentation'})
+vim.keymap.set('n', ' k', vim.lsp.buf.signature_help, { desc = 'Signature Documentation'})
 
 
 -- ???
